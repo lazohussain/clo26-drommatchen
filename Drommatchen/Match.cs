@@ -5,23 +5,27 @@ public class Match
     private string _bortalag;
     private string _datum;
 
-    // Properties — publik get, privat set
+
     public string Hemmalag
     {
-        // get och privat set för Hemmalag 
+        get { return _hemmalag; }
+        private set { _hemmalag = value; }
     }
 
     public string Bortalag
     {
-        // get och privat set för Bortalag
+        get { return _bortalag; }
+        private set { _bortalag = value; }
     }
 
     public string Datum
     {
-        // get och privat set för Datum
+        get { return _datum; }
+        private set { _datum = value; }
+    }
     }
 
-    // Konstruktor
+// Konstruktor
     public Match(string hemmalag, string bortalag, string datum)
     {
         // TODO: tilldela de privata fälten
