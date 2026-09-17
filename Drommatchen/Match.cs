@@ -23,23 +23,22 @@ public class Match
         get { return _datum; }
         private set { _datum = value; }
     }
-    }
 
-// Konstruktor
     public Match(string hemmalag, string bortalag, string datum)
     {
-        // TODO: tilldela de privata fälten
+        Hemmalag = hemmalag;
+        Bortalag = bortalag;
+        Datum = datum;
     }
 
     // Metod 1: skriv ut matchens lag och datum
     public void Presentera()
     {
-        // TODO
+        Console.WriteLine(Hemmalag + " vs " + Bortalag + " — " + Datum);
     }
 
-    // Metod 2: skriv ut spelarens namn, nummer och position
     public void AnnounceraMålskytt(Spelare spelare)
     {
-        // TODO
+        Console.WriteLine("MÅÅÅL ! #" + spelare.Nummer + " " + spelare.Namn + " (" + spelare.Position + ")");
     }
 }
