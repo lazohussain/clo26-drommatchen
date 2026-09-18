@@ -1,10 +1,15 @@
-// TODO: Skapa minst 2 spelare
-// Spelare spelare1 = new Spelare("Namn", nummer, "Position");
-// Spelare spelare2 = new Spelare(...);
+class Program
+{
+    static void Main()
+    {
+        Spelare spelare1 = new Spelare("Ronaldo", 7, "Forward");
+        Spelare spelare2 = new Spelare("Mbappe", 10, "Forward");
 
-// TODO: Skapa 1 match
-// Match match = new Match("Hemmalag", "Bortalag", "Datum");
+        Match match = new Match("Kurdish FC", "Paris", "2029-05-04");
 
-// TODO: Anropa match.Presentera()
+        match.Presentera();
 
-// TODO: Anropa match.AnnounceraMålskytt() med båda spelarna
+        match.AnnounceraMålskytt(spelare1);
+        match.AnnounceraMålskytt(spelare2);
+    }
+}
