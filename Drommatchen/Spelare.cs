@@ -28,4 +28,4 @@ public class Spelare
         Nummer = nummer;
         Position = position;
     }
-}
+} 
